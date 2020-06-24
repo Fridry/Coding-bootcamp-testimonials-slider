@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #fafafa;
+  color: hsl(240, 38%, 20%);
+  padding: 60px;
+  background: url("images/pattern-bg.svg") no-repeat 85% 0;
+  background-size: 580px 600px;
+}
+
+.text-box {
+  width: 45%;
+  position: absolute;
+  top: 30%;
+  left: 14%;
+}
+
+#one {
+  display: none;
+}
+
+#two {
+  display: inline;
+}
+
+.quotes {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+
+p.dep-text {
+  font-weight: 300;
+  font-size: 32px;
+  margin-bottom: 40px;
+  line-height: 50px;
+}
+
+.img-box {
+  position: absolute;
+  right: 14%;
+  z-index: -1;
+}
+
+.img-box img {
+  width: 450px;
+  height: 500px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 2px -1px rgba(0, 0, 0, 0.25);
+}
+
+.text-box:nth-child(3) {
+  display: none;
+}
+
+p.name {
+  font-weight: 300;
+  color: hsl(240, 18%, 77%);
+}
+
+p.name span {
+  font-weight: 700;
+  color: hsl(240, 38%, 20%);
+}
+
+.slide-buttons {
+  position: absolute;
+  background-color: #fff;
+  width: 100px;
+  height: 45px;
+  box-shadow: 3px 3px 2px -1px rgba(0, 0, 0, 0.25);
+  top: 86%;
+  right: 36%;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.slide-buttons button {
+  background-color: transparent;
+  width: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.slide-buttons button img {
+  width: 10px;
+  padding-top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background: url("images/pattern-bg.svg") no-repeat 50% 20px;
+    background-size: 380px 420px;
+    padding: 40px;
+  }
+
+  .img-box {
+    position: relative;
+    right: 0;
+    margin: auto;
+  }
+
+  .img-box img {
+    margin-top: 20px;
+    width: 320px;
+    height: 350px;
+  }
+
+  .slide-buttons {
+    top: 52%;
+    right: 40%;
+  }
+
+  .text-box {
+    width: 80%;
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  p.dep-text {
+    font-weight: 300;
+    font-size: 25px;
+    margin-bottom: 20px;
+    line-height: 40px;
+  }
+
+  .quotes {
+    position: absolute;
+    top: 60%;
+    left: 35%;
+  }
+}
